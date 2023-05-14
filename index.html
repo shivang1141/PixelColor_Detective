@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Color Picker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>PixelColor Detective</h1>
+        <input type="file" id="imageUpload" accept="image/*">
+        <label for="imageUpload">Upload Image</label>
+        <canvas id="imageCanvas"></canvas>
+        
+        <div class="color-info">
+            <div id="colorDisplay"></div>
+            <p id="hexValue"></p>
+            <ul class="color-history"></ul>
+            <button id="clearHistory">Clear History</button>
+            <button id="downloadPalette">Download Palette</button>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
